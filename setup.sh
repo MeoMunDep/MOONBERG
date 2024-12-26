@@ -115,7 +115,7 @@ while true; do
             else
                 print_green "Using node_modules from current directory"
             fi
-            cd moonberg & node bot
+            cd moonberg && node bot
             read -p "Press Enter to continue..."
             ;;
         4)
