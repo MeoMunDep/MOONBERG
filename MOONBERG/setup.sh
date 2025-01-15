@@ -38,7 +38,6 @@ create_default_configs() {
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 10,
   "doTasks": true,
-  "playGames": true,
   "referralCode": "Pwu3lkfEEO"
 }
 EOL
@@ -55,7 +54,7 @@ check_configs() {
 while true; do
     clear
     echo "============================================================================"
-    echo "    MOONBERG BOT SETUP AND RUN SCRIPT"
+    echo "    MOONBERG BOT SETUP AND RUN SCRIPT by @MeoMunDep"
     echo "============================================================================"
     echo
     echo "Current directory: $(pwd)"
@@ -115,7 +114,7 @@ while true; do
             else
                 print_green "Using node_modules from current directory"
             fi
-            cd moonberg && node bot
+            node moonberg
             read -p "Press Enter to continue..."
             ;;
         4)
